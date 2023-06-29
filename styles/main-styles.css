@@ -15,11 +15,19 @@ body {
     background-repeat: no-repeat;
     opacity: 0.35; 
     z-index: -1;
-  }
+}
+
+/* UPPER PART OF THE SITE */
 
 a {
   text-decoration: none;
   color: black;
+}
+
+.redirection-buttons a:not(:last-child)::after {
+  content: " | ";
+  color: black;
+  margin: 0 8px; 
 }
 
 .upper {
@@ -66,14 +74,14 @@ a {
   margin-top: -16px;
 }
 
-
-
 .transition-picture {
   margin-top: 50px;
   width: 100%; 
   height: 200px; 
   background-color: #008CC6; 
 }
+
+/* CONTENT OF THE MAIN PAGE */
 
 .main-content {
   display: flex;
@@ -93,6 +101,8 @@ a {
 .activities {
   text-align: center;
 }
+
+/* LOWER PART OF THE SITE*/
 
 .lower {
   display: flex;
