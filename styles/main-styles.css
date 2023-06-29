@@ -1,0 +1,76 @@
+body {
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    position: relative;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/stockimage.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.35; 
+    z-index: -1;
+  }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.upper {
+  position: relative; 
+  padding: 8px;
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: flex-end; 
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.main-info {
+  position: absolute; 
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+ 
+.logo, .main-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.adress {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.redirection-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 8px;
+  flex-basis: 100%;
+  margin-top: -16px;
+}
+
+
+
+/*.transition-picture {
+  margin-top: 50px;
+  width: 100%; 
+  height: 200px; 
+  background-color: #055cbe; 
+}*/
