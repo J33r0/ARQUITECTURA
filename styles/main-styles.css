@@ -57,7 +57,7 @@ a {
 }
 
 .logo {
-  margin-right: 24px;
+  margin-right: 64px;
   margin-left: auto; /* Center horizontally */
 }
 
@@ -67,7 +67,7 @@ a {
 
 .main-info {
   margin-right: auto;
-  margin-left: 24px; /* Center horizontally */
+  margin-left: 64px; /* Center horizontally */
 }
 
 .address {
