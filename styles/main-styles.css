@@ -59,6 +59,9 @@ a {
 .logo {
   margin-right: 24px;
   margin-left: auto; /* Center horizontally */
+}
+
+.logo-image {
   width: 150px;
 }
 
