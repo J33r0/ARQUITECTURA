@@ -41,19 +41,13 @@
       </div>
 
       <div class="main-info">
-        <div class="address">
-          <a href="https://www.google.fr/maps/place/10+Rue+de+Bienne,+67000+Strasbourg/@48.5759003,7.7529797,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c9aa5954292b:0xbebf3e4aaa4957dd!8m2!3d48.5758968!4d7.75556!16s%2Fg%2F11c2dndtxt?entry=ttu" target="_blank">
-              <p class="rue-de-bienne">10 Rue De Bienne 67000 Srasbourg</p>
-          </a>
-
-          <p class="tel-info">01 23 45 67 89</p>
-        </div>
-
         <div class="redirection-buttons">
-          <a href="./index.html">ACCUEIL</a>
-          <a href="./sub-pages/architects.html">NOS ARCHITECTES</a>
-          <a href="./sub-pages/projects.html">NOS PROJETS</a>
-          <a href="./sub-pages/contact.html">CONTACTEZ-NOUS</a>    
+          <ul>
+            <li><a href="./index.html">ACCUEIL</a></li>
+            <li><a href="./sub-pages/architects.html">NOS ARCHITECTES</a></li>
+            <li><a href="./sub-pages/projects.html">NOS PROJETS</a></li>
+            <li><a href="./sub-pages/contact.html">CONTACTEZ-NOUS</a> </li>
+          </ul>   
         </div>
     </div>
   </div>
@@ -287,7 +281,7 @@
           </li>
       
           <script>
-            const nodes = [].slice.call(document.querySelectorAll('li'), 0);
+            const nodes = [].slice.call(document.querySelectorAll('.offers li'), 0);
             const directions = { 0: 'top', 1: 'right', 2: 'bottom', 3: 'left' };
             const classNames = ['in', 'out'].map(p => Object.values(directions).map(d => `${p}-${d}`)).reduce((a, b) => a.concat(b));
           
@@ -322,9 +316,12 @@
   <hr>
 
   <div class="lower">
-    <div class="slogan">
-        <p>Espaces inspirants, Designs exquis :</p>
-        <p>Création de merveilles architecturales</p>
+    <div class="address">
+      <a href="https://www.google.fr/maps/place/10+Rue+de+Bienne,+67000+Strasbourg/@48.5759003,7.7529797,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c9aa5954292b:0xbebf3e4aaa4957dd!8m2!3d48.5758968!4d7.75556!16s%2Fg%2F11c2dndtxt?entry=ttu" target="_blank">
+          <p class="rue-de-bienne">10 Rue De Bienne 67000 Srasbourg</p>
+      </a>
+
+      <p class="tel-info">01 23 45 67 89</p>
     </div>
 
     <div class="contact">
