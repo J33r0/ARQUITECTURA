@@ -10,6 +10,20 @@
 <body>
     <div class="background-container">
         <img class="background-image" src="../img/cotopaxi2.png" alt="cotopaxi">
+
+        <script>
+          window.addEventListener('load', function() {
+            var background = document.querySelector('.background-image');
+            var container = document.querySelector('.background-container');
+      
+            container.style.height = background.offsetHeight + 'px';
+  
+            window.addEventListener('resize', function() {
+                container.style.height = background.offsetHeight + 'px';
+            });
+          });
+        </script>
+
         <script>
           window.addEventListener('scroll', function() {
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
