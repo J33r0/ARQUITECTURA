@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://fonts.emailapis.com/css?family=Bree+Serif);
 
 :root {
   --blue: #008CC6;
@@ -464,10 +464,178 @@ a {
   background-color: var(--black-bg);
   color: white;
   margin: -8px;
+  padding: 20px;
+}
+
+.info-contact {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  gap: 300px;
+}
+
+.info-contact ul {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 20px;
+}
+
+.info-contact ul li {
+  list-style: none;
+  width: 50px;
+}
+
+.info-contact ul li a {
+  display:block;
+  position:relative;
+  width:50px;
+  height:50px;
+  line-height:50px;
+  font-size:20px;
+  text-align:center;
+  text-decoration:none;
+  color:#ffffff;
+  margin: 0 30px;
+  transition:.5s;
+}
+
+.info-contact ul li a span {
+  position:absolute;
+  transition: transform .5s;
+}
+
+.info-contact ul li a .first,
+.info-contact ul li a .third{
+  width:100%;
+  height:3px;
+  background:#ffffff;
+}
+
+.info-contact ul li a .first {
+  top:0;
+  left:0;
+  transform-origin: right;
+}
+
+.info-contact ul li a:hover .first {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition:transform .5s;
+}
+
+.info-contact ul li a .third {
+  bottom:0;
+  left:0;
+  transform-origin: left;
+}
+
+.info-contact ul li a:hover .third {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition:transform .5s;
+}
+
+.info-contact ul li a .second,
+.info-contact ul li a .fourth{
+  width:3px;
+  height:100%;
+  background:#ffffff;
+}
+
+.info-contact ul li a .second {
+  top:0;
+  left:0;
+  transform:scale(0);
+  transform-origin: bottom;
+}
+
+.info-contact ul li a:hover .second {
+  transform: scale(1);
+  transform-origin: top;
+  transition:transform .5s;
+}
+
+.info-contact ul li a .fourth {
+  top:0;
+  right:0;
+  transform:scale(0);
+  transform-origin: top;
+}
+
+.info-contact ul li a:hover .fourth {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition:transform .5s;
+}
+
+.info-contact .facebook:hover {
+  color: #3b5998;
+}
+
+.info-contact .facebook:hover span { 
+  background: #3b5998;
+}
+
+.info-contact .linkedin:hover {
+  color: #0072b1;
+}
+
+.info-contact .linkedin:hover span { 
+  background: #0072b1;
+}
+
+.info-contact .instagram:hover {
+  color: #c32aa3;
+}
+
+.info-contact .instagram:hover span { 
+  background: #c32aa3;
+}
+
+.info-contact .email:hover {
+  color: #dd4b39;
+}
+
+.info-contact .email:hover span { 
+  background: #dd4b39;
+}
+
+.info-contact ul li a .linkedin {
+  color: #1da1f2;
+}
+
+.info-contact ul li a .instagram {
+  color: #c32aa3;
+}
+
+.info-contact ul li a .email {
+  color: #dd4b39;
 }
 
 .address {
-  text-align: center;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.address a {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.address svg {
+  width: 20px;
+  margin-right: 12px;
+}
+
+.address svg path {
+  fill: var(--blue);
 }
 
 .contact-button {
