@@ -4,8 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARQUITECTURA : Nos Architectes</title>
+
     <link rel="stylesheet" href="../styles/main-styles.css">
     <link rel="stylesheet" href="../styles/architects-styles.css">
+
+    <script>
+      function showDescription(descriptionId) {
+          var description = document.getElementById(descriptionId);
+          var descriptionContainer = document.querySelector(".description-container");
+          description.style.display = "block";
+          descriptionContainer.classList.add("show");
+          description.classList.add("show");
+      }
+
+      function closeDescription(descriptionId) {
+          var description = document.getElementById(descriptionId);
+          var descriptionContainer = document.querySelector(".description-container");
+          description.style.display = "none";
+          descriptionContainer.classList.remove("show");
+          description.classList.remove("show");
+      }
+    </script>
 </head>
 <body>
     <div class="background-container">
@@ -34,70 +53,115 @@
     </div>
   
     <div class="upper">
-        <div class="logo">
-          <a href="./index.html">
-            <img class="logo-image" src="../img/logo-arquitectura.png" alt="ARQUITECTURA">
-          </a>
+      <div class="logo">
+        <a href="./index.html">
+          <img class="logo-image" src="../img/logo-arquitectura.png" alt="ARQUITECTURA">
+        </a>
+      </div>
+  
+      <div class="main-info">
+        <div class="redirection-buttons">
+          <ul>
+            <li><a href="../index.html">ACCUEIL</a></li>
+            <li><a href="./architects.html">NOS ARCHITECTES</a></li>
+            <li><a href="./projects.html">NOS PROJETS</a></li>
+            <li><a href="./contact.html">CONTACTEZ-NOUS</a> </li>
+          </ul>   
         </div>
-  
-        <div class="main-info">
-          <div class="address">
-            <a href="https://www.google.fr/maps/place/10+Rue+de+Bienne,+67000+Strasbourg/@48.5759003,7.7529797,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c9aa5954292b:0xbebf3e4aaa4957dd!8m2!3d48.5758968!4d7.75556!16s%2Fg%2F11c2dndtxt?entry=ttu" target="_blank">
-                <p class="rue-de-bienne">10 Rue De Bienne 67000 Srasbourg</p>
-            </a>
-  
-            <p class="tel-info">01 23 45 67 89</p>
-          </div>
-  
-          <div class="redirection-buttons">
-            <a href="../index.html">ACCUEIL</a>
-            <a href="./architects.html">NOS ARCHITECTES</a>
-            <a href="./projects.html">NOS PROJETS</a>
-            <a href="./contact.html">CONTACTEZ-NOUS</a>    
-          </div>
       </div>
     </div>
 
     <div class="main-content">
-        <div class="description-text">
-            <h2 class="arquitectura-title">ARQUITECTURA</h2>
+      <div class="wrapper">
+        <div class="business-desc">
+            <h3 class="arquitectura-title">ARQUITECTURA</h3>
 
             <p>La diversité est notre force créative. Notre équipe d'architectes talentueux est composée de professionnels passionnés qui embrassent une multitude de réalités architecturales. Avec une vaste expérience et une connaissance approfondie de différents types d'architecture, nous sommes parfaitement équipés pour relever tous les défis qui se présentent à nous. Que ce soit pour concevoir des bâtiments modernes et avant-gardistes, restaurer des sites historiques ou créer des espaces urbains durables, nous avons les compétences et l'expertise nécessaires. La diversité de notre équipe nous permet d'adopter des approches novatrices et d'apporter des solutions uniques à chaque projet. Nous croyons fermement que cette richesse de perspectives et d'expériences est ce qui nous distingue et nous permet de créer des designs exceptionnels qui dépassent les attentes de nos clients.</p>
         </div>
-    
-        <img src="../img/stockimage2.jpg" alt="Image du bureau d'ARQUITECTURA" class="office">
+        
+        <img src="../img/stockimage.jpeg" alt="Image du bureau d'ARQUITECTURA" class="office">
+    </div>  
 
-        <div class="description-text-2">
-            <h2>Patricio Proano</h2>
+    <h2>Notre Equipe</h2>
 
-            <p>En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+    <div class="pyramid-container">
+        <div class="top-picture">
+          <img src="../img/profile-pic.jpeg" alt="Profile Picture 1" onclick="showDescription('description1')">
         </div>
 
-        <img class="profile-pic pp" src="../img/profile-pic.jpeg" alt="Patricio Proano: Proprietaire du cabinet">
-
-        <div class="description-text-3">
-            <h2>Patricio Proano</h2>
-
-            <p>En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+        <div class="bottom-row">
+          <div class="bottom-picture">
+            <img src="../img/profile-pic.jpeg" alt="Profile Picture 2" onclick="showDescription('description2')">
+          </div>
+          <div class="bottom-picture">
+            <img src="../img/profile-pic.jpeg" alt="Profile Picture 3" onclick="showDescription('description3')">
+          </div>
+          <div class="bottom-picture">
+            <img src="../img/profile-pic.jpeg" alt="Profile Picture 4" onclick="showDescription('description4')">
+          </div>
         </div>
-
-        <img class="profile-pic pp2" src="../img/profile-pic.jpeg" alt="Patricio Proano: Proprietaire du cabinet">
     </div>
 
+    <div class="description-container">
+        <div class="description" id="description1">
+          <div class="close" onclick="closeDescription('description1')">X</div>
+
+          <img id="profile1-img" src="../img/profile-pic.jpeg" alt="">
+
+          <p id="profile1-desc">En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="description-container">
+        <div class="description" id="description2">
+          <div class="close" onclick="closeDescription('description2')">X</div>
+
+          <img id="profile1-img" src="../img/profile-pic.jpeg" alt="">
+          
+          <p id="profile1-desc">En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="description-container">
+        <div class="description" id="description3">
+          <div class="close" onclick="closeDescription('description3')">X</div>
+
+          <img id="profile1-img" src="../img/profile-pic.jpeg" alt="">
+          
+          <p id="profile1-desc">En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+        </div>
+      </div> 
+    </div>
+
+    <div class="description-container">
+        <div class="description" id="description4">
+          <div class="close" onclick="closeDescription('description4')">X</div>
+
+          <img id="profile1-img" src="../img/profile-pic.jpeg" alt="">
+          
+          <p id="profile1-desc">En tant que propriétaire du cabinet d'architecture, je suis fier de diriger une équipe d'architectes talentueux et passionnés. Notre engagement est de créer des espaces exceptionnels qui dépassent les attentes de nos clients. Avec une vision claire et une expertise approfondie du secteur, nous nous efforçons de fournir des solutions architecturales innovantes et esthétiquement remarquables. Notre approche repose sur une collaboration étroite avec nos clients, en comprenant leurs besoins et en intégrant leurs aspirations dans chaque projet. Nous sommes déterminés à offrir des services de la plus haute qualité, en mettant l'accent sur la créativité, la durabilité et la gestion de projet efficace. En choisissant notre cabinet d'architecture, vous bénéficierez d'un partenariat solide et d'une expérience client exceptionnelle, où votre satisfaction est notre priorité absolue.</p>
+        </div>
+      </div> 
+    </div>
 
     <hr>
 
     <div class="lower">
-        <div class="slogan">
-            <p>Espaces inspirants, Designs exquis :</p>
-            <p>Création de merveilles architecturales</p>
-        </div>
+      <div class="address">
+        <a href="https://www.google.fr/maps/place/10+Rue+de+Bienne,+67000+Strasbourg/@48.5759003,7.7529797,17z/data=!3m1!4b1!4m6!3m5!1s0x4796c9aa5954292b:0xbebf3e4aaa4957dd!8m2!3d48.5758968!4d7.75556!16s%2Fg%2F11c2dndtxt?entry=ttu" target="_blank">
+            <p class="rue-de-bienne">10 Rue De Bienne 67000 Srasbourg</p>
+        </a>
 
-        <div class="contact">
-            <a href="./contact.html">
-                <button class="contact-button">Contactez-Nous</button>
-            </a>
-        </div>
+        <p class="tel-info">01 23 45 67 89</p>
+      </div>
+
+      <div class="contact">
+        <a href="./contact.html">
+          <button class="contact-button">Contactez-Nous</button>
+        </a>
+      </div>
     </div>
 </body>
 </html>
