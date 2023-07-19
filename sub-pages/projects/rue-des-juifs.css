@@ -1,0 +1,55 @@
+#project-slider {
+    width: 100%;
+    height: 750px; 
+    position: relative;
+    z-index: 0;
+  }
+  
+  .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #008cc6 !important;
+  }
+  
+  .swiper-button-next {
+    right: 10px;
+  }
+  
+  .swiper-button-prev {
+    left: 10px;
+  }
+  
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #008cc6 !important; /* Change the background color of the dots */
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 10px !important; 
+  }
+  
+  .project-desc {
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 75px;
+  }
+  
+  .main-content {
+    height: 70em;
+  }
