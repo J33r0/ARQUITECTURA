@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="../styles/main-styles.css">
     <link rel="stylesheet" href="../styles/contact-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
     <div class="background-container">
@@ -78,7 +76,7 @@
 
         <script>
           document.getElementById('contactForm').addEventListener('submit', function(event) {
-              event.preventDefault(); // Prevent the default form submission
+              event.preventDefault();
           
               var form = event.target;
               var formData = new FormData(form);

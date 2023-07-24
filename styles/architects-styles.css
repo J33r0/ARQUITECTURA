@@ -1,9 +1,9 @@
 .main-content {
-    height: 110em;
     display: grid;
     grid-gap: 40px;
     place-content: center;
     text-align: center;
+    padding-top: 130px;
   }
   
   .wrapper {

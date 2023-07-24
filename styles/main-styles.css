@@ -10,6 +10,7 @@ body {
   padding: 0;
   position: relative;
   overflow-x: hidden;
+  background-color: var(--black-bg);
 }
 
 .background-container {
@@ -132,10 +133,10 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 90em;
   background-color: var(--black-bg);
   color: white;
-  margin: -8px;
+  padding-top: 110px;
+  padding-bottom: 90px;
 }
 
 .activities {

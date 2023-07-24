@@ -57,67 +57,102 @@
     <div class="main-content">
         <h2>Les projets que nous avons realisé</h2>
 
+        <div class="category-filter">
+          <button data-category="all">Tous</button>
+          <button data-category="c1">Residentiel</button>
+          <button data-category="c2">Education</button>
+          <button data-category="c3">Sportif</button>
+          <button data-category="c4">Tertiaire</button>
+        </div>
+
         <div class="projects">
-            <div class="project-img">
+            <div class="project-img" data-category="c1">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 1</h3>
                 </div>
               </a>
             </div>
 
-            <div class="project-img">
+            <div class="project-img" data-category="c2">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 2</h3>
                 </div>
               </a>
             </div>
 
-            <div class="project-img">
+            <div class="project-img" data-category="c3">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 3</h3>
                 </div>
               </a>
             </div>
 
-            <div class="project-img">
+            <div class="project-img" data-category="c4">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 4</h3>
                 </div>
               </a>
             </div>
 
-            <div class="project-img">
+            <div class="project-img" data-category="c3">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 33</h3>
                 </div>
               </a>
             </div>
 
-            <div class="project-img">
+            <div class="project-img" data-category="c2">
               <a href="./projects/rue-des-juifs.html">
                 <img src="../img/projects/rue-des-juifs/photo1.avif" alt="Projet Rue des Juifs">
 
                 <div class="footer">
-                    <h3 class="title">Rue Des Juifs</h3>
+                    <h3 class="title">Rue Des Juifs 22</h3>
                 </div>
               </a>
             </div>
         </div>
+
+        <script>
+          // JavaScript to handle the category filter
+          const categoryButtons = document.querySelectorAll('.category-filter button');
+          const projects = document.querySelectorAll('.project-img');
+  
+          categoryButtons.forEach(button => {
+              button.addEventListener('click', () => {
+                  const selectedCategory = button.getAttribute('data-category');
+  
+                  projects.forEach(project => {
+                      project.style.display = 'none';
+                  });
+  
+                  if (selectedCategory === 'all') {
+                      projects.forEach(project => {
+                          project.style.display = 'block';
+                      });
+                  } else {
+                      const selectedProjects = document.querySelectorAll(`[data-category="${selectedCategory}"]`);
+                      selectedProjects.forEach(project => {
+                          project.style.display = 'block';
+                      });
+                  }
+              });
+          });
+      </script>
     </div>
 
     <hr>

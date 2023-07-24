@@ -1,14 +1,14 @@
 .main-content {
-    height: 110em;
     display: grid;
     grid-gap: 40px;
     place-content: center;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .projects {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 40px;
     justify-items: center;
 }
@@ -18,9 +18,9 @@
 }
 
 .project-img img {
-    --c: #008CC6; /* the border color */
-    --b: 10px;    /* the border thickness*/
-    --g: 5px;     /* the gap on hover */
+    --c: #008CC6; 
+    --b: 10px;    
+    --g: 5px;     
     
     padding: calc(var(--g) + var(--b));
     --_g: #0000 25%,var(--c) 0;
@@ -59,6 +59,25 @@
     text-align: left;
     line-height: 24px;
     margin-left: 8px;
+}
+
+.category-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.category-filter button {
+    color: #008CC6;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 10px;
+    text-decoration: underline; 
+}
+
+.category-filter button:hover {
+    text-decoration: none; 
 }
   
   
