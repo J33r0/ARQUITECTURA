@@ -1,7 +1,7 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
-    $phone = $_POST["phone-number"]
+    $phone = $_POST["phone-number"];
     $email = $_POST["email"];
     $message = $_POST["message"];
     
@@ -13,15 +13,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Compose the email body
     $body = "Nom: $name\n";
-    $body .= "Telephone : $phone\n"
+    $body .= "Telephone : $phone\n";
     $body .= "Email: $email\n";
     $body .= "Description du projet: $message\n";
 
     // Send the email
     if (mail($to, $subject, $body)) {
-        echo "Merci pour votre message, nous allons repondre dans les plus brefs delais !";
+        echo "success";
     } else {
-        echo "Il y a eu une erreur lors de l'envoi du formulaire, essayez a nouveau.";
+        echo "error";
     }
 }
+//http://arquitectura.alwaysdata.net/arquitectura/form.php
 ?>
