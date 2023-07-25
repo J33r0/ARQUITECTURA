@@ -45,6 +45,7 @@
   .pyramid-container img:hover {
     transform: scale(1.2);
   }
+  
   .description-container {
     position: fixed;
     top: 0;
