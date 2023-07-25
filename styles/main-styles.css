@@ -411,6 +411,14 @@ a {
   fill: var(--grey);
 }
 
+.offers li .svg-show svg rect {
+  fill: var(--grey);
+}
+
+.offers li .svg-show svg circle {
+  fill: var(--grey);
+}
+
 * {
   box-sizing: border-box;
 }
