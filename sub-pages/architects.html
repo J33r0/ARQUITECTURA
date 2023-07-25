@@ -11,19 +11,15 @@
 
     <script>
       function showDescription(descriptionId) {
-          var description = document.getElementById(descriptionId);
-          var descriptionContainer = document.querySelector(".description-container");
-          description.style.display = "block";
-          descriptionContainer.classList.add("show");
-          description.classList.add("show");
+        var description = document.getElementById(descriptionId);
+        var descriptionContainer = description.closest(".description-container");
+        descriptionContainer.classList.add("show");
       }
-
+    
       function closeDescription(descriptionId) {
-          var description = document.getElementById(descriptionId);
-          var descriptionContainer = document.querySelector(".description-container");
-          description.style.display = "none";
-          descriptionContainer.classList.remove("show");
-          description.classList.remove("show");
+        var description = document.getElementById(descriptionId);
+        var descriptionContainer = description.closest(".description-container");
+        descriptionContainer.classList.remove("show");
       }
     </script>
 </head>
