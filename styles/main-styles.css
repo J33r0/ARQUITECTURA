@@ -365,7 +365,7 @@ a {
   list-style: none;
 }
 
-.offers li a {
+.offers li .svg-show {
   display: inline-block;
   vertical-align: top;
   text-decoration: none;
@@ -396,6 +396,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .offers li .svg-show svg {
@@ -669,3 +670,65 @@ a {
   width: 3rem;
 }
 
+.description-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.description-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.description {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #2b2b2b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  max-width: 500px;
+}
+
+.description img {
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.description h2 {
+  margin-top: 30px;
+}
+
+.description p {
+  margin: 0;
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.description .contact-button {
+  margin: 0 auto;
+  margin-top: 20px;
+}
