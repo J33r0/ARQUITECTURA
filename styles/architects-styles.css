@@ -195,24 +195,26 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 1;
     max-width: 300px;
-    height: auto;
-    overflow-y: scroll;
+    max-height: 70vh;
+    overflow-y: auto;
   }
 
   .description img {
     width: 50%;
+    height: 50%;
     height: auto;
     border-radius: 50%;
     margin-bottom: 10px;
+    object-fit: contain;
   }
 
   .description h2 {
-      font-size: 18px;
-      margin-top: 20px; 
+    font-size: 18px;
+    margin-top: 20px; 
   }
 
   .description p {
-      margin: 0;
+    margin: 0;
   }
 
   .close {
