@@ -739,6 +739,7 @@
     font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
     background-color: var(--black-bg);
   }
 
@@ -897,7 +898,7 @@
   .contact-button {
     align-items: center;
     background-color: transparent;
-    color: var(--blue);
+    color: white;
     cursor: pointer;
     display: flex;
     font-family: ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
