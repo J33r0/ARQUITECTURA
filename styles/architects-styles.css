@@ -206,12 +206,6 @@
     object-fit: contain;
   }
 
-  @media screen and (max-height: 600px) {
-    .description {
-        max-height: 70vh; 
-    }
-  }
-
   .description h2 {
     font-size: 18px;
     margin-top: 20px; 
