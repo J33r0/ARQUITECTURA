@@ -39,6 +39,11 @@
         --_i: 100%;
         transition: .3s, background-size .3s .3s;
     }
+
+    .project-img a {
+        display: block;
+        position: relative;
+      }
     
     .footer {
         position: absolute;
